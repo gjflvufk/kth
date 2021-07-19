@@ -1,0 +1,50 @@
+
+1. 프로젝트 생성
+
+	New > Project > Spring - Spring Regacy Project > Spring MVC Project
+	
+	packages : com.javassem.basic
+	
+2. 프로젝트 > Properties
+
+	- Project Facets : java 1.8 변경
+	- server :  tomcat
+	
+3. Servers 창에서 구동하는 톰캣을 더블클릭하여 
+
+	Modules 탭을 열고 Docbase와 path를 프로젝트명과 동일하게
+
+	
+4. 톰캣서버 실행 후 웹브라우저에서 확인
+	` Servers > tomcat 서버 구동 
+	
+	` 웹브라우저에서  http://localhost:8080/path명(프로젝트명)
+	
+5. pom.xml에 라이브러리 버전 변경 및 라이브러리 추가 
+
+		<!-- ### 버전 변경 ### -->
+				<java-version>1.8</java-version>
+				<org.springframework-version>5.0.8.RELEASE</org.springframework-version>
+				<org.aspectj-version>1.6.10</org.aspectj-version>
+				<org.slf4j-version>1.6.6</org.slf4j-version>
+		
+		<!-- ### 버전 변경 ### -->		
+		<plugin>		            	
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            
+6. 프로젝트 > Maven > Update Project
+
+	Package Explorer에  <JRE System Library[JavaSE-1.6]> 에서  JavaSE-1.8로 변경 확인 
+	
+7. web.xml
+

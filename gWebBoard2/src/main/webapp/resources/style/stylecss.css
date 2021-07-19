@@ -1,0 +1,24 @@
+.normal {  
+font-family: "굴림", "돋움"; 
+font-size: 12; 
+font-style: normal; 
+font-weight:normal; 
+text-decoration: none;
+border:1px solid #c0c0c0; }
+
+.normalbold {  font-family: "굴림", "돋움"; font-size: 12;
+font-style: normal; font-weight: bold; text-decoration: none}
+
+td{font-size:12;font-weight:bold; }
+a{text-decoration:none}
+
+input {font-size: 9pt; color: #000000; text-decoration: none;
+	border-style:groove;
+}
+
+table{ width:60%;  margin:auto; } /* 테이블 가운데 정렬  */
+
+.table1 {  width:570px; border:0px; cellspacing:0px; cellpadding:5px; }
+.table2 {  width:570px;  cellspacing:0; cellpadding:3px; }
+
+.tb_ttl {  background:#FFCCCC;  width:179px; }

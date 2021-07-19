@@ -1,0 +1,35 @@
+
+1. 테이블 생성
+	CREATE TABLE member(
+	  userid VARCHAR2(10),
+	  userpass varchar2(10),
+	  username varchar2(10),
+    CONSTRAINT pk_member_id PRIMARY KEY(userid)
+	);
+	
+
+2. JDBC driver를 못찾는 경우 
+
+	` 오라클 사이트에서 찾아서 다운로드 (  ojdbc6.jar 또는  ojdbc8.jar )
+	` Sql Developer 설치하면 jdbc/lib 폴더에 있음
+	
+	프로젝트 > Build Path로 라이브러리 추가 
+	
+	[참고] 공식적으로 오라클 11까지는 Maven 라이브러리 지원 안됨 
+	
+	[참고] Tomcat에서 JDBC 드라이버 문제 발생시
+		프로젝트 > Properties > Deployment Assembly에 추가 
+		Add버튼 > Java Build Path Entries 
+
+
+
+3. 서블릿 설정 파일
+
+   root-context.xml
+   servlet-context.xml
+
+
+
+		
+
+
